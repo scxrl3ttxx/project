@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'avenir-lt-w01_35-light1475496';
+    src: url('fonts/Montserrat-Light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cormorantgaramond-semibold';
+    src: url('fonts/CormorantGaramond-SemiBold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 90px;
+}
+
+.contact h1 {
+    font-family: cormorantgaramond-semibold, cormorantgaramond, "cormorant garamond", serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: rgb(45, 86, 97);
+    text-align: center;
+}
+
+.contact p {
+    font-family: avenir-lt-w01_35-light1475496, sans-serif;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+    max-width: 701px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 90px;
+}
+
+.contact-us-side,
+.contact-image-side {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us-side {
+    align-items: center; 
+    margin-bottom: 90px;
+}
+
+.contact-us-side h2,
+.wix-contact-section {
+    width: 100%;
+    max-width: 467px; 
+}
+
+.contact-us-side h2 {
+    color: rgb(45, 86, 97);
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    text-align: left; 
+}
+
+.wix-contact-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-side,
+.form-wrapper,
+.wix-form {
+    width: 100%;
+}
+
+.contact-form-side {
+    margin-bottom: 90px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    color: rgb(45, 86, 97);
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.wix-form input[type="text"],
+.wix-form input[type="email"],
+.wix-form textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(45, 86, 97);
+    padding: 10px 0;
+    outline: none;
+    font-size: 16px;
+}
+
+.wix-submit-btn {
+    display: block;
+    margin: 30px auto 0 auto;
+    border: 1px solid rgb(45, 86, 97);
+    background: transparent;
+    color: rgb(45, 86, 97);
+    padding: 12px 40px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.wix-submit-btn:hover {
+    background: rgb(45, 86, 97);
+    color: #fff;
+}
+
+.wix-form input[type="text"]:hover,
+.wix-form input[type="email"]:hover,
+.wix-form textarea:hover,
+.wix-form input[type="text"]:focus,
+.wix-form input[type="email"]:focus,
+.wix-form textarea:focus {
+    background-color: #f2f5f7; 
+}
+
+.extra-image-box {
+    margin-top: 120px;
+    width: 100%;
+    max-width: 467px;
+}
+
+.extra-image-box img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contact-image-side img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    margin: 90px auto 0;
+    max-width: 1100px;
+    gap: 30px;
+}
+
+.info-title {
+    font-family: cormorantgaramond-semibold, cormorantgaramond, "cormorant garamond", serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: rgb(45, 86, 97);
+    letter-spacing: 2px;
+    margin-bottom: 70px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto; 
+    gap: 60px;
+}
+
+.info-image-side img {
+    width: 100%;
+    height: 100%;
+    min-height: 550px;
+    display: block;
+    object-fit: cover;
+}
+
+.info-text-side {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.info-text-side h3 {
+    font-family: cormorantgaramond-semibold, cormorantgaramond, "cormorant garamond", serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: rgb(45, 86, 97);
+    margin-bottom: 30px;
+}
+
+.info-group {
+    margin-bottom: 50px;
+}
+
+.info-group h4 {
+    font-family: cormorantgaramond-semibold, cormorantgaramond, "cormorant garamond", serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(45, 86, 97);
+    margin-bottom: 8px;
+}
+
+.info-group p {
+    font-family: avenir-lt-w01_35-light1475496, sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 700px) {
+    .contact {
+        padding: 15px 15px;
+        margin-top: 10px;
+    }
+
+    .contact-h {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-h h1 {
+        order: 1;
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .contact-h p {
+        order: 4;
+        font-size: 14px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .contact-image-side {
+        order: 2;
+        width: 100vw;
+        margin-left: -50vw;
+        margin-right: -50vw;
+    }
+
+    .contact-image-side img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .contact-us-side {
+        order: 3;
+        width: 100%;
+        max-width: 467px;
+        margin-bottom: 20px;
+    }
+
+    .contact-us-side h2 {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .extra-image-box {
+        order: 5;
+        margin-top: 20px;
+    }
+
+    .info-section {
+        margin: 40px 0 0 0;
+        width: 100%;
+    }
+
+    .info-title {
+        font-size: 26px;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 25px;
+        padding: 0 15px;
+    }
+
+    .info-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .info-image-side {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        height: 300px;
+    }
+
+    .info-image-side img {
+        width: 100%;
+        height: 100%;
+        min-height: unset;
+        object-fit: cover;
+    }
+
+    .info-text-side {
+        text-align: center;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .info-text-side h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .info-group {
+        text-align: center;
+    }
+
+    .info-group h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .info-group p {
+        text-align: center;
+    }
+}

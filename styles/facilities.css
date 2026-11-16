@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'avenir-lt-w01_35-light1475496';
+    src: url('fonts/Montserrat-Light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cormorantgaramond-semibold';
+    src: url('fonts/CormorantGaramond-SemiBold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 90px auto 0;
+    max-width: 980px;
+    gap: 30px;
+}
+
+.experience h1 {
+    font-family: cormorantgaramond-semibold, cormorantgaramond, "cormorant garamond", serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: rgb(45, 86, 97);
+    text-align: center;
+}
+
+.experience p {
+    font-family: avenir-lt-w01_35-light1475496, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+    max-width: 701px;
+    text-align: center;
+}
+
+
+.all {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 90px auto;
+}
+
+.all-text {
+    width: 490px;
+    height: 695px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 60px; 
+}
+
+.all-text h2 {
+    font-family: cormorantgaramond-semibold, cormorantgaramond, "cormorant garamond", serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: rgb(45, 86, 97);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.all-text p {
+    font-family: avenir-lt-w01_35-light1475496, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.all-image img {
+    display: block;
+    width: 490px;
+    height: 695px;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 750px) {
+    .experience {
+        margin-top: 50px;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .experience h1 {
+        font-size: 38px;
+    }
+
+    .all {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 40px 0;
+        padding: 0;
+        gap: 0;
+    }
+
+    .all.reverse {
+        display: flex;
+        flex-direction: column-reverse; 
+        max-width: 100%;
+        margin: 40px 0;
+        padding: 0;
+        gap: 0;
+    }
+
+    .all-text {
+        width: 100%;
+        height: auto;
+        padding: 0 20px 25px 20px; 
+    }
+
+    .all-text h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .all-text p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .all-image {
+        width: 100%;
+    }
+
+    .all-image img {
+        display: block;
+        width: 100vw !important;
+        max-width: none;
+        height: 280px;
+        object-fit: cover;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .experience {
+        margin-top: 30px;
+        padding: 0 10px;
+        gap: 15px;
+    }
+
+    .experience h1 {
+        font-size: 26px;
+    }
+
+    .experience p, 
+    .all-text p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .all, 
+    .all.reverse {
+        margin: 30px 0;
+    }
+
+    .all-text {
+        padding: 0 15px 20px 15px;
+    }
+
+    .all-text h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .all-image img {
+        height: 220px !important; 
+    }
+}

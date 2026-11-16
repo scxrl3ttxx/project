@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'avenir-lt-w01_35-light1475496';
+    src: url('fonts/Montserrat-Light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cormorantgaramond-semibold';
+    src: url('fonts/CormorantGaramond-SemiBold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.treatments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 90px auto 0;
+    max-width: 980px;
+    gap: 30px;
+}
+
+.treatments h1 {
+    font-family: cormorantgaramond-semibold, cormorantgaramond, "cormorant garamond", serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: rgb(45, 86, 97);
+    text-align: center;
+}
+
+.treatments p {
+    font-family: avenir-lt-w01_35-light1475496, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+    max-width: 701px;
+    text-align: center;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px; 
+  padding: 20px;
+  margin: 90px auto;
+}
+
+.filter-btn {
+    background-color: transparent;
+    color: rgb(45, 86, 97); 
+    border: 1px solid rgb(45, 86, 97);
+    padding: 6px 12px;
+    font-size: 16px;
+    border-radius: 50px; 
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background-color: rgb(45, 86, 97); 
+    color: #ffffff; 
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;       
+    padding: 20px;
+    margin: 30px auto;
+}
+
+.service-card {
+    width: 100%;
+    max-width: 614px; 
+}
+
+.card-image {
+    width: 100%;    
+    height: auto;    
+    display: block;
+    margin-bottom: 30px;
+}
+
+.card-content {
+    font-family: Arial, sans-serif;
+    color: #2b5863;
+    max-width: 552px;
+    margin-left: 30px;
+}
+
+.service-title {
+    font-family: cormorantgaramond-semibold;
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: rgb(45, 86, 97);
+}
+
+.service-description {
+    font-family: avenir-lt-w01_35-light1475496, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    max-width: 400px;
+    margin-bottom: 25px;
+}
+
+.divider {
+    border-top: 1px solid rgb(128, 128, 128);
+    margin-bottom: 25px;
+}
+
+.service-duration {
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.service-price {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: rgb(0, 0, 0);
+}
+
+.book-btn {
+    background-color: transparent;
+    color: rgb(45, 86, 97);
+    border: 1px solid rgb(45, 86, 97);
+    padding: 10px 24px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.book-btn:hover {
+    text-decoration: underline;
+}
+
+.mobile-filter-wrapper {
+    display: none;
+}
+
+.filter-container a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .treatments {
+        margin: 30px auto 0;
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    .treatments h1 {
+        font-size: 30px;
+    }
+
+    .filter-container {
+        display: none;
+    }
+    
+    .mobile-filter-wrapper {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    .mobile-filter-select {
+        width: 100%;
+        padding: 10px 14px;
+        font-size: 15px;
+        font-family: Arial, sans-serif;
+        color: #000000;
+        background-color: #ffffff;
+        border: 1px solid #b4b4b4;
+        border-radius: 0;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .card-wrapper {
+        padding: 0 10px;
+        margin: 15px auto;
+    }
+
+    .card-content {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .service-title {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .service-description {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .divider {
+        margin-bottom: 12px;
+    }
+
+    .book-btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px 10px;
+    }
+}
